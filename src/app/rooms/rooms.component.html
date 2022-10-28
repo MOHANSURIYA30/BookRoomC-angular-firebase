@@ -1,0 +1,18 @@
+<div class="room-container">
+  <div class="room-form-content">
+    <h3  >
+        Select Rooms
+    </h3>
+   <div style="display:flex ;width:100%;justify-content:space-around" >
+    <label for="">Type</label>
+    <select [formControl]="roomType">
+      <option value="single ac room">Single Ac Room</option>
+      <option value="single non ac room">Single Non Ac Room</option>
+      <option value="double ac room">Double Ac Room</option>
+      <option value="double non ac room">Double Non Ac Room</option>
+    </select>
+   </div>
+   <button class="search"  [routerLink]="['list',{type:roomType.value}]" >Search</button>
+  </div> 
+
+</div>

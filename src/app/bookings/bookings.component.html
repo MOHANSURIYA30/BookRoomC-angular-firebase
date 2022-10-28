@@ -1,0 +1,26 @@
+<div class="room-list-container" >
+    <div class="rooms-content" *ngIf="bookingDetails.length !== 0">
+       <div class="single-content" *ngFor="let booking of bookingDetails" >
+        <img src="../../assets/room1.jpg" alt="">
+       <div class="name-rate">
+        <h2 class="room-name" >Room {{booking.room_no}} </h2>
+       </div>
+        <div style="display:flex;flex-direction:column;font-size: 95%;margin-bottom:5px;">
+            <b  >Date</b>
+            <span >{{booking.fromDate | date: 'dd-MM-yyyy'}} to {{booking.toDate | date: 'dd-MM-yyyy'}}</span> 
+        </div> 
+        <div style="display:flex;flex-direction:column;font-size: 95%;">
+            <b>Status</b>
+            <span *ngIf="booking.status == 'pending'" style="display:flex;align-items: center;color: rgb(172, 156, 16);" >
+                <ion-icon name="refresh"></ion-icon>
+                <span>Pending</span> </span> 
+          <span *ngIf="booking.status == 'confirmed'"  style="display:flex;align-items: center;color:green;" >
+            <ion-icon name="checkmark"></ion-icon>
+               <span>Confirmed</span> </span>      
+        </div> 
+       </div>
+
+       
+    </div>
+</div>
+

@@ -1,0 +1,102 @@
+
+ <div class="overlay" *ngIf="showOverlay " >
+    <div class="overlay-content">
+      <div class="booked-msg" *ngIf="booked" >
+        <h1 style="display: flex;flex-direction: column;align-items: center;">
+            <ion-icon style="color:green ;font-size: 250%;" name="checkmark-circle"></ion-icon>
+              <span>Your Room Booked !</span> </h1>
+              <button class="book" style="display:flex;margin:auto;margin-top: 15px;" routerLink="../../../" >Ok</button>
+      </div>
+       
+      <div  *ngIf="!booked">
+        <div style="display:flex ;width: 100%;justify-content: space-between;align-items: center;" >
+            <h1>Room {{roomDetails.roomNo}}</h1>
+            <ion-icon (click)="closeOverlay()" style="cursor:pointer;font-size:150%;color: rgb(75, 75, 75);" name="close-outline"></ion-icon>
+        </div>
+        <div style="display:flex ;width: 100%;justify-content: space-around;margin-top: 25px;">
+            <div>
+                <label for="" style="margin-right:10px ;">From</label>
+                <input type="date" [formControl]="fromDate" >
+            </div>
+            <div>
+                <label for="" style="margin-right:10px ;">To </label>
+                <input type="date" [formControl]="toDate" >   
+            </div>
+        </div>
+
+        <div style="display:flex;justify-content:flex-end;margin-top: 25px;" >
+            <button (click)="closeOverlay()" class="cancel" >Cancel</button>
+            <button class="book" (click)="bookRoom()" >Book</button>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="room-detail-container" *ngIf="roomDetails" >  
+    <div class="detail-content" >
+    <div class="image-container">
+        <div class="img1-container">
+            <img class="image1" src="../../assets/1.jpg" alt="">
+        </div>
+        <div class="img2-container" style="display:flex;flex-direction:column;margin-right: 15px;" >
+            <img class="image2" src="../../assets/2.jpg" alt="">
+            <img class="image3" src="../../assets/3.jpg" alt="">
+        </div>
+        <div class="img3-container" style="display:flex;flex-direction:column;margin-right: 15px;" >
+            <img class="image2" src="../../assets/4.jpg" alt="">
+            <img class="image3" src="../../assets/5.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="bottom-container">
+        <div style="width: 50%;margin-right: 15px;">
+            <div class="description">
+                <h3>About Room</h3>
+                <ul>
+                  <li>The property has contemporary amenities and provides guests with a unique staying experience.</li>
+                  <li>The property is located in a tranquil neighbourhood within the bustling city.</li>
+                  <li>Free parking on the premises.</li>
+                  <li>The property is easily accessible to famous tourist spots .</li>
+                   <li>Take a refreshing dip in the outdoor pool or soak up the sun on the sunbed.</li> 
+              </ul>
+              </div>
+              <div class="amenities">
+               <h3>Amenities</h3>
+               <ul>
+                  <li>-  Lounge</li>
+                  <li>-  Business center</li>
+                  <li>-  Conference Room</li>
+                  <li>-  Free Wifi</li>
+               </ul>
+              </div>
+        </div>
+       
+        <div class="room-details">
+           <h3>Room {{roomDetails.roomNo}}</h3>
+           <div class="rating"><ion-icon name="star"></ion-icon>4.1</div>
+           <ul>
+            <li><ion-icon name="checkmark"></ion-icon>Free Cancellation till check in.</li>
+            <li><ion-icon name="checkmark"></ion-icon>Breakfast Available</li>
+            <li><ion-icon name="checkmark"></ion-icon>Booked 100+ Times</li>
+        </ul>
+           <div>
+            <div class="price-mrp" >
+                <div class="price">₹{{roomDetails.price}}</div>
+                <div class="mrp">₹{{roomDetails.mrp}}</div>
+            </div>
+            <div class="price-mrp" style="font-size:70% ;" >
+                <div>+ ₹ 185 taxes & fees</div>
+            </div>
+            <div style="display:flex;justify-content:flex-end" >
+                <button class="show-other" (click)="goBack()" >Show Other Room</button>
+                <button class="book-now" (click)="showPopup()">Book Now</button>
+            </div>
+           </div>
+           
+
+        </div>
+    </div>
+   </div>   
+</div>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                                               

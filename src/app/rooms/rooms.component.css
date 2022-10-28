@@ -1,0 +1,48 @@
+.room-container
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.room-form-content
+{
+    background-color: white;
+    width: 30%;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+h3
+{
+    margin-bottom: 20px;
+}
+
+select
+{
+    padding:5px 2px;
+    width: 60%;
+    /* border: 1px solid rgba(109, 109, 109, 0.753); */
+    border-radius: 2px;
+    border: 0px solid rgba(109, 109, 109, 0.753);
+    background-color: rgb(224, 221, 221);
+}
+
+
+.search
+{
+    padding: 5px 15px;
+    border: 0px solid black;
+    /* background-color: rgb(19, 56, 179); */
+    background-color: #1479FF;
+    color: white;
+    border-radius: 3px;
+    margin-top: 15px;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: 25px;
+    display: flex;margin-left:auto;
+}

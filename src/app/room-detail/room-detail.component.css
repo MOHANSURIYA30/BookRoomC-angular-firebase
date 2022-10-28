@@ -1,0 +1,240 @@
+.room-detail-container
+{
+    width:100%;
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;   
+    /* background-color: antiquewhite; */
+}
+
+.detail-content
+{
+   background-color:white;
+   height: 95vh;
+   overflow-y: scroll;
+   padding: 20px 25px 10px 25px; 
+   width: 95%;
+   margin: 1% 1% 0% 1%;
+   border-radius: 5px;
+}
+
+.image-container
+{
+    display: flex;
+    /* align-items: flex-start; */
+}
+
+/* .img1-container
+{
+
+} */
+.image1
+{
+   
+    margin-right: 15px;
+    width:515px;
+}
+
+.image2,.image3
+{
+  width: 240px;  
+  
+}
+.image3
+{
+    margin-top: 15px;
+}
+
+.bottom-container
+{
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+    /* align-items: flex-start; */
+}
+.description
+{
+    width: 100%;
+   
+}
+.description h3
+{
+    margin-bottom: 5px;
+}
+ul
+{
+    margin-left: 20px;
+    font-size: 80%;
+}
+.description li
+{
+    margin-bottom: 5px;
+}
+
+.amenities
+{
+    width: 100%;
+    margin-top: 15px; 
+}
+
+.amenities ul
+{
+    list-style:none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.room-details
+{
+    width: 50%;
+}
+
+.price-mrp
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.price
+{
+    font-size: 130%;
+    font-weight: 600;
+}
+.mrp
+{
+    font-size: 80%;
+    text-decoration: line-through;
+    color: red;
+}
+
+.show-other
+{
+    padding: 10px 15px;
+    border: 1px solid  #1479FF;
+    /* background-color: rgb(19, 56, 179); */
+    background-color:white;
+    color:  #1479FF;
+    width: 40%;
+    border-radius: 3px;
+    margin-top: 15px;
+    cursor: pointer;    
+}
+
+.book-now
+{
+    padding: 10px 15px;
+    border: 0px solid black;
+    /* background-color: rgb(19, 56, 179); */
+    background-color: #1479FF;
+    color: white;
+    width: 40%;
+    border-radius: 3px;
+    margin-top: 15px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.book-now:hover,.show-other:hover
+{
+    transform: scale(1.05);
+}
+
+.rating
+{
+
+    width: 8%;
+    font-size: 75%;
+    color:white;
+    background-color:#1479FF ;
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+
+.rating ion-icon
+{
+ margin-right: 3px;
+}
+
+
+.room-details ul
+{
+    font-size: 80%;
+    margin: 10px 0px 0px 0px;
+    list-style: none;
+}
+
+.room-details li
+{
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 5px; */
+}
+.room-details li ion-icon
+{
+    margin-right: 5px;
+    color: green;
+}
+
+
+.overlay
+{
+    position: absolute;
+    width: 84%;
+    height:100%;
+    /* background-color: green; */
+    background-color: rgba(255, 255, 255, 0.808);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.overlay-content
+{
+ background-color: rgb(255, 255, 255);
+ width: 45%;
+ padding: 25px;
+ border-radius: 5px;
+ box-shadow:0px 0px 10px gray ;
+
+}
+
+input
+{
+    padding:5px 5px;
+    /* width: 60%; */
+    border: 0px solid rgba(109, 109, 109, 0.753);
+    background-color: rgb(224, 221, 221);
+    border-radius: 2px;
+    
+}
+
+
+.cancel
+{
+    padding: 10px 30px;
+    border: 1px solid  #1479FF;
+    /* background-color: rgb(19, 56, 179); */
+    background-color:white;
+    color:  #1479FF;
+    border-radius: 3px;
+    margin-top: 15px;
+    cursor: pointer;   
+    margin-right: 25px; 
+}
+
+.book
+{
+    padding: 5px 25px;
+    border: 1px solid  #1479FF;
+    /* background-color: rgb(19, 56, 179); */
+    background-color:#1479FF;
+    color: white;
+    border-radius: 3px;
+    margin-top: 15px;
+    cursor: pointer;  
+    margin-right: 25px;   
+}

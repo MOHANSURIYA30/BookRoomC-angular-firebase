@@ -1,0 +1,26 @@
+<div class="overall">
+    <ion-icon (click)="goBack()" name="arrow-back-circle" style="font-size:200%;padding:15px;color:#1479FF;cursor:pointer;" ></ion-icon>
+    <div class="room-list-container" >
+       
+        <div class="rooms-content"  *ngIf="selectedRooms" >
+            <div class="single-content" *ngFor="let room of selectedRooms"  [routerLink]="['room-detail',{id:room.id}]" >
+            <img src="../../assets/room1.jpg" alt="">
+           <div class="name-rate">
+            <h2 class="room-name" >Room {{room.roomNo}}</h2>
+            <div class="rating" ><ion-icon name="star"></ion-icon>4.1</div>
+           </div> 
+            <ul>
+                <li><ion-icon name="checkmark"></ion-icon>Free Cancellation till check in.</li>
+                <li><ion-icon name="checkmark"></ion-icon>Breakfast Available</li>
+                <li><ion-icon name="checkmark"></ion-icon>Booked 100+ Times</li>
+            </ul>
+            <div style="text-align:right;" >  <span class="price"> ₹{{room.price}} </span> <span class="mrp"> ₹{{room.mrp}}</span> </div>
+           </div>
+          
+    
+           
+        </div>
+    </div>
+    
+    
+</div> 
